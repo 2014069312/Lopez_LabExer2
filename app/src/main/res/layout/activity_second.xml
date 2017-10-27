@@ -4,55 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.example.lopez_labexer2.SecondActivity">
 
     <Button
         android:id="@+id/btn_loadSharedPreferences"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOAD SHARED PREFERENCES"
-        android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
-        android:onClick="loadSharedPreferences"/>
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#a1d6e2"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="loadSharedPreferences"
+        android:text="LOAD SHARED PREFERENCES"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_loadInternalStorage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOAD INTERNAL STORAGE"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/btn_loadSharedPreferences"
-        android:onClick="loadInternalStorage"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#a1d6e2"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="loadInternalStorage"
+        android:text="LOAD INTERNAL STORAGE"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tv_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
         android:layout_below="@id/btn_loadInternalStorage"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:textColor="black" />
 
     <Button
         android:id="@+id/btn_clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CLEAR"
-        android:layout_marginTop="100dp"
+        android:layout_alignBaseline="@+id/btn_back"
+        android:layout_alignBottom="@+id/btn_back"
+        android:layout_marginEnd="35dp"
         android:layout_marginLeft="40dp"
-        android:layout_below="@id/tv_display"
-        android:layout_alignParentLeft="true"
-        android:onClick="clearText"/>
+        android:layout_toStartOf="@+id/tv_display"
+        android:backgroundTint="#bcbabe"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="clearText"
+        android:text="CLEAR"
+        android:textColor="#ffffff"
+        android:textStyle="italic" />
 
     <Button
         android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BACK"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="40dp"
-        android:layout_below="@id/tv_display"
         android:layout_alignParentRight="true"
-        android:onClick="goBack"/>
+        android:layout_below="@id/tv_display"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#bcbabe"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="goBack"
+        android:text="BACK"
+        android:textColor="#ffffff"
+        android:textStyle="italic" />
 
 </RelativeLayout>
