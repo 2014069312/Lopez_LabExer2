@@ -27,6 +27,7 @@
         android:layout_below="@+id/btn_loadSharedPreferences"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="#a1d6e2"
         android:fontFamily="sans-serif-condensed"
         android:onClick="loadInternalStorage"
@@ -36,12 +37,12 @@
 
     <TextView
         android:id="@+id/tv_display"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_loadInternalStorage"
         android:layout_centerHorizontal="true"
-        android:layout_margin="30dp"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textAlignment="center"/>
 
     <Button
         android:id="@+id/btn_clear"
@@ -49,9 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/btn_back"
         android:layout_alignBottom="@+id/btn_back"
-        android:layout_marginEnd="35dp"
-        android:layout_marginLeft="40dp"
-        android:layout_toStartOf="@+id/tv_display"
+        android:layout_marginLeft="60dp"
         android:backgroundTint="#bcbabe"
         android:fontFamily="sans-serif-condensed"
         android:onClick="clearText"
@@ -65,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_below="@id/tv_display"
-        android:layout_marginRight="40dp"
+        android:layout_marginRight="60dp"
         android:layout_marginTop="100dp"
         android:backgroundTint="#bcbabe"
         android:fontFamily="sans-serif-condensed"
