@@ -69,6 +69,6 @@
         android:text="NEXT"
         android:layout_below="@+id/btn_internalStorage"
         android:layout_centerHorizontal="true"
-        android:onClick="next"/>
+        android:onClick="goToNext"/>
 
 </RelativeLayout>

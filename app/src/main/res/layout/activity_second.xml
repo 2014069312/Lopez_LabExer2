@@ -29,7 +29,7 @@
         android:id="@+id/tv_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_margin="30dp"
         android:layout_below="@id/btn_loadInternalStorage"
         android:layout_centerHorizontal="true"/>
 
@@ -39,8 +39,10 @@
         android:layout_height="wrap_content"
         android:text="CLEAR"
         android:layout_marginTop="100dp"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@id/tv_display"/>
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/tv_display"
+        android:layout_alignParentLeft="true"
+        android:onClick="clearText"/>
 
     <Button
         android:id="@+id/btn_back"
@@ -48,7 +50,9 @@
         android:layout_height="wrap_content"
         android:text="BACK"
         android:layout_marginTop="100dp"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@id/btn_clear"/>
+        android:layout_marginRight="40dp"
+        android:layout_below="@id/tv_display"
+        android:layout_alignParentRight="true"
+        android:onClick="goBack"/>
 
 </RelativeLayout>
